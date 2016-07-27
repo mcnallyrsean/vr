@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ODEA Tour</title>
+  <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
+  <script src="https://rawgit.com/mayognaise/aframe-drag-look-controls-component/master/dist/aframe-drag-look-controls-component.min.js"></script>
+</head>
+<body>
+  <a-scene>
+    <a-assets>
+      <img id="glow" src="images/glow.jpg" scale="2 2 2">
+      <img id="sky1" src="images/1_masked.png">
+      <img id="sky2" src="images/2_masked.png">
+      <img id="sky3" src="images/3_masked.png">
+      <img id="sky4" src="images/4_masked.png">
+      <img id="sky5" src="images/5_masked.png">
+      <img id="sky6" src="images/6_masked.png">
+      <img id="sky7" src="images/7_masked.png">
+      <img id="sky8" src="images/8_masked.png">
+      <video id="test" autoplay loop src="movies/test_movie.mp4"></video>
+    </a-assets>
+
+    <a-entity position="0 1.6 0" rotation="0 90 0">
+      <a-entity camera="" drag-look-controls look-controls="" mouse-cursor="">
+        <a-cursor position="0 0 -2" scale="2 2 2" fuse="true" fuseTimeout="50" color="#ffffff"></a-cursor>
+      </a-entity>
+    </a-entity>
+
+    <a-sky id="one" src="#sky1" rotation="0 -115 0" visible="true"></a-sky>
+    <a-sky id="two" src="#sky2" rotation="0 -45 0" visible="false"></a-sky>
+    <a-sky id="three" src="#sky3" rotation="0 -45 0" visible="false"></a-sky>
+    <a-sky id="four" src="#sky4" rotation="0 -45 0" visible="false"></a-sky>
+    <a-sky id="five" src="#sky5" rotation="0 -45 0" visible="false"></a-sky>
+    <a-sky id="six" src="#sky6" rotation="0 -45 0" visible="false"></a-sky>
+    <a-sky id="seven" src="#sky7" rotation="0 -45 0" visible="false"></a-sky>
+    <a-sky id="eight" src="#sky8" rotation="0 -45 0" visible="false"></a-sky>
+    <a-videosphere id="nine" src="#test" rotation="0 180 0" visible=false></a-videosphere>
+
+    <a-entity rotation="0 0 0">
+      <a-curvedimage id="demo_nav_1" src="images/1_masked_cropped.png" radius="5.7" theta-length="35" 3eight=".85" position="0 .25 0" scale=".4 .4 .4"  opacity=".45">
+        <a-animation attribute="rotation" from="0 0 0" to="0 -360 0" begin="0" dur="160000" repeat="infinite" easing="linear"></a-animation>
+        <a-event name="mouseenter" opacity="1"></a-event>
+        <a-event name="mouseleave" opacity=".45"></a-event>
+      </a-curvedimage>
+    </a-entity>
+
+    <a-entity rotation="0 -40 0">
+      <a-curvedimage id="demo_nav_2" src="images/2_masked_cropped.png" radius="5.7" theta-length="35" 3eight=".85" position="0 .25 0" scale=".4 .4 .4"  opacity=".45">
+        <a-animation attribute="rotation" from="0 0 0" to="0 -360 0" begin="0" dur="160000" repeat="infinite" easing="linear"></a-animation>
+        <a-event name="mouseenter" opacity="1"></a-event>
+        <a-event name="mouseleave" opacity=".45"></a-event>
+      </a-curvedimage>
+    </a-entity>
+
+    <a-entity rotation="0 -80 0">
+      <a-curvedimage id="demo_nav_3" src="images/3_masked_cropped.png" radius="5.7" theta-length="35" 3eight=".85" position="0 .25 0" scale=".4 .4 .4"  opacity=".45">
+        <a-animation attribute="rotation" from="0 0 0" to="0 -360 0" begin="0" dur="160000" repeat="infinite" easing="linear"></a-animation>
+        <a-event name="mouseenter" opacity="1"></a-event>
+        <a-event name="mouseleave" opacity=".45"></a-event>
+      </a-curvedimage>
+    </a-entity>
+
+    <a-entity rotation="0 -120 0">
+      <a-curvedimage id="demo_nav_4" src="images/4_masked_cropped.png" radius="5.7" theta-length="35" 3eight=".85" position="0 .25 0" scale=".4 .4 .4"  opacity=".45">
+        <a-animation attribute="rotation" from="0 0 0" to="0 -360 0" begin="0" dur="160000" repeat="infinite" easing="linear"></a-animation>
+        <a-event name="mouseenter" opacity="1"></a-event>
+        <a-event name="mouseleave" opacity=".45"></a-event>
+      </a-curvedimage>
+    </a-entity>
+
+    <a-entity rotation="0 -160 0">
+      <a-curvedimage id="demo_nav_5" src="images/5_masked_cropped.png" radius="5.7" theta-length="35" 3eight=".85" position="0 .25 0" scale=".4 .4 .4"  opacity=".45">
+        <a-animation attribute="rotation" from="0 0 0" to="0 -360 0" begin="0" dur="160000" repeat="infinite" easing="linear"></a-animation>
+        <a-event name="mouseenter" opacity="1"></a-event>
+        <a-event name="mouseleave" opacity=".45"></a-event>
+      </a-curvedimage>
+    </a-entity>
+
+    <a-entity rotation="0 -200 0">
+      <a-curvedimage id="demo_nav_6" src="images/6_masked_cropped.png" radius="5.7" theta-length="35" 3eight=".85" position="0 .25 0" scale=".4 .4 .4"  opacity=".45">
+        <a-animation attribute="rotation" from="0 0 0" to="0 -360 0" begin="0" dur="160000" repeat="infinite" easing="linear"></a-animation>
+        <a-event name="mouseenter" opacity="1"></a-event>
+        <a-event name="mouseleave" opacity=".45"></a-event>
+      </a-curvedimage>
+    </a-entity>
+
+    <a-entity rotation="0 -240 0">
+      <a-curvedimage id="demo_nav_7" src="images/7_masked_cropped.png" radius="5.7" theta-length="35" 3eight=".85" position="0 .25 0" scale=".4 .4 .4"  opacity=".45">
+        <a-animation attribute="rotation" from="0 0 0" to="0 -360 0" begin="0" dur="160000" repeat="infinite" easing="linear"></a-animation>
+        <a-event name="mouseenter" opacity="1"></a-event>
+        <a-event name="mouseleave" opacity=".45"></a-event>
+      </a-curvedimage>
+    </a-entity>
+
+    <a-entity rotation="0 -280 0">
+      <a-curvedimage id="demo_nav_8" src="images/8_masked_cropped.png" radius="5.7" theta-length="35" 3eight=".85" position="0 .25 0" scale=".4 .4 .4"  opacity=".45">
+        <a-animation attribute="rotation" from="0 0 0" to="0 -360 0" begin="0" dur="160000" repeat="infinite" easing="linear"></a-animation>
+        <a-event name="mouseenter" opacity="1"></a-event>
+        <a-event name="mouseleave" opacity=".45"></a-event>
+      </a-curvedimage>
+    </a-entity>
+
+    <a-entity rotation="0 -320 0">
+      <a-curvedimage id="demo_nav_9" src="images/video_thumb.png" radius="5.7" theta-length="35" 3eight=".85" position="0 .25 0" scale=".4 .4 .4"  opacity=".45">
+        <a-animation attribute="rotation" from="0 0 0" to="0 -360 0" begin="0" dur="160000" repeat="infinite" easing="linear"></a-animation>
+        <a-event name="mouseenter" opacity="1"></a-event>
+        <a-event name="mouseleave" opacity=".45"></a-event>
+      </a-curvedimage>
+    </a-entity>
+  </a-scene>
+  <script src="tour_nav_circle.js"></script>
+</body>
+</html>
