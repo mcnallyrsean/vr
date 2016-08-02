@@ -7,6 +7,7 @@ var six = document.querySelector('#six');
 var seven = document.querySelector('#seven');
 var eight = document.querySelector('#eight');
 var nine = document.querySelector('#nine');
+var ten = document.querySelector('#ten');
 
 document.querySelector("#nav1").addEventListener("click", function() {
   one.setAttribute("visible", true);
@@ -18,6 +19,7 @@ document.querySelector("#nav1").addEventListener("click", function() {
   seven.setAttribute("visible", false);
   eight.setAttribute("visible", false);
   nine.setAttribute("visible", false);
+  ten.setAttribute("visible", false);
 });
 
 document.querySelector("#nav2").addEventListener("click", function() {
@@ -30,6 +32,7 @@ document.querySelector("#nav2").addEventListener("click", function() {
   seven.setAttribute("visible", false);
   eight.setAttribute("visible", false);
   nine.setAttribute("visible", false);
+  ten.setAttribute("visible", false);
 });
 
 document.querySelector("#nav3").addEventListener("click", function() {
@@ -42,6 +45,7 @@ document.querySelector("#nav3").addEventListener("click", function() {
   seven.setAttribute("visible", false);
   eight.setAttribute("visible", false);
   nine.setAttribute("visible", false);
+  ten.setAttribute("visible", false);
 });
 
 document.querySelector("#nav4").addEventListener("click", function() {
@@ -54,6 +58,7 @@ document.querySelector("#nav4").addEventListener("click", function() {
   seven.setAttribute("visible", false);
   eight.setAttribute("visible", false);
   nine.setAttribute("visible", false);
+  ten.setAttribute("visible", false);
 });
 
 document.querySelector("#nav5").addEventListener("click", function() {
@@ -66,6 +71,7 @@ document.querySelector("#nav5").addEventListener("click", function() {
   seven.setAttribute("visible", false);
   eight.setAttribute("visible", false);
   nine.setAttribute("visible", false);
+  ten.setAttribute("visible", false);
 });
 
 document.querySelector("#nav6").addEventListener("click", function() {
@@ -77,7 +83,7 @@ document.querySelector("#nav6").addEventListener("click", function() {
   six.setAttribute("visible", true);
   seven.setAttribute("visible", false);
   eight.setAttribute("visible", false);
-  nine.setAttribute("visible", false);
+  ten.setAttribute("visible", false);
 });
 
 document.querySelector("#nav7").addEventListener("click", function() {
@@ -90,6 +96,7 @@ document.querySelector("#nav7").addEventListener("click", function() {
   seven.setAttribute("visible", true);
   eight.setAttribute("visible", false);
   nine.setAttribute("visible", false);
+  ten.setAttribute("visible", false);
 });
 
 document.querySelector("#nav8").addEventListener("click", function() {
@@ -102,7 +109,9 @@ document.querySelector("#nav8").addEventListener("click", function() {
   seven.setAttribute("visible", false);
   eight.setAttribute("visible", true);
   nine.setAttribute("visible", false);
+  ten.setAttribute("visible", false);
 });
+
 document.querySelector("#nav9").addEventListener("click", function() {
   one.setAttribute("visible", false);
   two.setAttribute("visible", false);
@@ -113,4 +122,18 @@ document.querySelector("#nav9").addEventListener("click", function() {
   seven.setAttribute("visible", false);
   eight.setAttribute("visible", false);
   nine.setAttribute("visible", true);
+  ten.setAttribute("visible", false);
+});
+
+document.querySelector("#nav10").addEventListener("click", function() {
+  one.setAttribute("visible", false);
+  two.setAttribute("visible", false);
+  three.setAttribute("visible", false);
+  four.setAttribute("visible", false);
+  five.setAttribute("visible", false);
+  six.setAttribute("visible", false);
+  seven.setAttribute("visible", false);
+  eight.setAttribute("visible", false);
+  nine.setAttribute("visible", false);
+  ten.setAttribute("visible", true);
 });
